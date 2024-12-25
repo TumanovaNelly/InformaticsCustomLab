@@ -16,20 +16,35 @@
 ```bash
 grep -oE "\<[[:upper:]]{2,}\>" data/*
 ```
+Результат:
+
+![image](https://github.com/user-attachments/assets/2ba8f0f1-c038-4239-827c-90da522df502)
+
 2. 
 ```bash
 grep -nE "^[[:alpha:]]{7}\>|[[:digit:]]" data/*
 ```
+Результат:
+
+![image](https://github.com/user-attachments/assets/5a63a876-7bcc-4412-bc70-84fc468d495f)
 
 #### Пайплайны + `grep` = 
 1. 
 ```bash
-grep -iw "не" data/data_memes.txt | wc -w
+grep -iw "не" data/data_memes.txt | uniq | wc -w
 ```
+Результат:
+
+![image](https://github.com/user-attachments/assets/1f681c6e-676d-42e4-962e-d39b278305cd)
+
+
 2. 
 ```bash
 grep -ioE "\w*волк\w*" data/data_wolf.txt | sort | uniq -c
 ```
+Результат:
+
+![image](https://github.com/user-attachments/assets/df7fe003-81bc-44c7-96a6-e96813d3e73a)
 
 
 ### Вывод 
