@@ -79,3 +79,6 @@ grep -rin --include="data*.txt" "человек"
 ### Дополнительные источники
 
 ► [Ресурс](https://www.google.ru/), где можно найти (почти) всё
+► [Руководство по команде grep](https://man7.org/linux/man-pages/man1/grep.1.html)
+► [Шпаргалка по регулярным выражениям и команде grep](https://hackware.ru/?p=3238)
+► [Регулярные выражения онлайн](https://regex101.com/)
