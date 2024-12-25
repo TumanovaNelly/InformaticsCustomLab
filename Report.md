@@ -3,7 +3,7 @@
 ### Задание
 
 #### Регулярные выражения 
-1. Выведите все слова из файлов папки `data`, которые написаны в верхнем регистре. 
+1. Выведите все слова из файлов папки `data`, которые написаны в верхнем регистре и их длина не менее 2х символов. 
 2. Выведите строки файлов с номерами из папки `data`, в которых встречается хотя бы одно число или первое слово состоит из 7 букв.
 
 #### Пайплайны + `grep` = 
@@ -18,7 +18,7 @@ grep -oE "\<[[:upper:]]{2,}\>" data/*
 ```
 Результат:
 
-![image](https://github.com/user-attachments/assets/2ba8f0f1-c038-4239-827c-90da522df502)
+![image](https://github.com/user-attachments/assets/5a63a876-7bcc-4412-bc70-84fc468d495f)
 
 2. 
 ```bash
@@ -26,7 +26,7 @@ grep -nE "^[[:alpha:]]{7}\>|[[:digit:]]" data/*
 ```
 Результат:
 
-![image](https://github.com/user-attachments/assets/5a63a876-7bcc-4412-bc70-84fc468d495f)
+![image](https://github.com/user-attachments/assets/2ba8f0f1-c038-4239-827c-90da522df502)
 
 #### Пайплайны + `grep` = 
 1. 
